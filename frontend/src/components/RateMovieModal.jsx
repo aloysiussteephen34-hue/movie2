@@ -111,3 +111,4 @@ const RateMovieModal = ({ isOpen, onClose, movie, onConfirmWatched }) => {
 };
 
 export default RateMovieModal;
+

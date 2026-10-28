@@ -74,3 +74,4 @@ const Pagination = ({ pagination, onPageChange }) => {
 };
 
 export default Pagination;
+

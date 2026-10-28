@@ -124,3 +124,4 @@ const WatchNextModal = ({ isOpen, onClose, recommendation, error, loading, onSta
 };
 
 export default WatchNextModal;
+

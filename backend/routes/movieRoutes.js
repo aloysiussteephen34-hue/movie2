@@ -31,3 +31,4 @@ router.route('/:id')
 router.patch('/:id/status', updateMovieStatus);
 
 module.exports = router;
+

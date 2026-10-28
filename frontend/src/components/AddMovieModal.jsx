@@ -247,3 +247,4 @@ const AddMovieModal = ({ isOpen, onClose, onMovieAdded }) => {
 };
 
 export default AddMovieModal;
+

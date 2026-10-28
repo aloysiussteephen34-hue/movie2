@@ -90,7 +90,7 @@ The `.env` file is intentionally included in the repository so evaluators can ru
 
 ```env
 PORT=5000
-MONGODB_URI=mongodb+srv://aloysius225701_db_user:Aloysius123@cluster0.iktlsq7.mongodb.net/movie_watchlist?retryWrites=true&w=majority
+MONGODB_URI=mongodb+srv://aloysius225701_db_user:Aloysius000@cluster0.iktlsq7.mongodb.net/movie_watchlist?retryWrites=true&w=majority
 NODE_ENV=development
 CLIENT_URL=http://localhost:5173
 ```
@@ -354,3 +354,4 @@ Calculated dynamically using MongoDB `$group`, `$match`, and `$sort` aggregation
 - **Backend**: Node.js, Express.js, Mongoose ODM
 - **Database**: MongoDB Atlas (Cloud Cluster)
 - **Architecture**: Modular MVC (Controllers, Models, Routes, Middlewares, Components)
+

@@ -39,3 +39,4 @@ if ($LASTEXITCODE -eq 0) {
     Write-Host ""
     Write-Host "[ERROR] Failed to push to GitHub. Verify your token has 'repo' scope." -ForegroundColor Red
 }
+

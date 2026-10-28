@@ -59,3 +59,4 @@ export const movieService = {
 };
 
 export default api;
+

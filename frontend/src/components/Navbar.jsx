@@ -47,3 +47,4 @@ const Navbar = ({ onOpenAddModal, onOpenWatchNext }) => {
 };
 
 export default Navbar;
+

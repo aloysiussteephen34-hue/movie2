@@ -281,3 +281,4 @@ const EditMovieModal = ({ isOpen, onClose, movie, onMovieUpdated }) => {
 };
 
 export default EditMovieModal;
+

@@ -80,3 +80,4 @@ const movieSchema = new mongoose.Schema(
 movieSchema.index({ releaseYear: 1, title: 1 });
 
 module.exports = mongoose.model('Movie', movieSchema);
+
