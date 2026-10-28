@@ -3,6 +3,7 @@ const cors = require('cors');
 const morgan = require('morgan');
 const dotenv = require('dotenv');
 const path = require('path');
+const fs = require('fs');
 
 // Load environment variables
 dotenv.config({ path: path.join(__dirname, '.env') });
@@ -40,8 +41,19 @@ app.get('/api/health', (req, res) => {
 // API Routes
 app.use('/api/movies', movieRoutes);
 
-// Error Handling Middlewares
-app.use(notFound);
+// Serve static frontend in production or if dist exists
+const frontendDist = path.join(__dirname, '../frontend/dist');
+if (fs.existsSync(frontendDist)) {
+  app.use(express.static(frontendDist));
+  app.get('*', (req, res, next) => {
+    if (req.url.startsWith('/api')) return next();
+    res.sendFile(path.join(frontendDist, 'index.html'));
+  });
+} else {
+  // Error Handling Middlewares for API only
+  app.use(notFound);
+}
+
 app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
@@ -55,3 +67,4 @@ process.on('unhandledRejection', (err) => {
   console.error(`[Unhandled Rejection]: ${err.message}`);
   server.close(() => process.exit(1));
 });
+

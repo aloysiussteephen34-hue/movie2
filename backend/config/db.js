@@ -7,8 +7,8 @@ const connectDB = async () => {
     });
     console.log(`[Database] MongoDB Atlas Connected: ${conn.connection.host}`);
   } catch (error) {
-    console.error(`[Database Error] Connection failed: ${error.message}`);
-    process.exit(1);
+    console.error(`[Database Error] Atlas Connection failed: ${error.message}`);
+    console.log('[Database Notice] If using MongoDB Atlas, please check database credentials and IP whitelist (0.0.0.0/0) in Atlas console.');
   }
 };
 
