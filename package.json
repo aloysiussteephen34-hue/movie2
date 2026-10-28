@@ -1,0 +1,23 @@
+{
+  "name": "movie-watchlist-manager",
+  "version": "1.0.0",
+  "description": "Movie Watchlist Manager built with MERN Stack (MongoDB, Express, React, Node.js)",
+  "main": "backend/server.js",
+  "scripts": {
+    "server": "npm --prefix backend start",
+    "client": "npm --prefix frontend dev",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend dev",
+    "install:all": "npm --prefix backend install && npm --prefix frontend install"
+  },
+  "keywords": [
+    "mern",
+    "movie-manager",
+    "mongodb",
+    "express",
+    "react",
+    "node"
+  ],
+  "author": "Aloysius Steephen",
+  "license": "ISC"
+}

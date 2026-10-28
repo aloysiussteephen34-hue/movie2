@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Production build outputs
+dist/
+build/
+*/dist/
+*/build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Editor and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# NOTE: .env is intentionally NOT ignored as per exam instructions:
+# "If you use environment variables (e.g., database URI, port), include the .env file in the repository. It is required so the evaluators can run the project and verify the output."
